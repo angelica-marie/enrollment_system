@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment</title>
+    <!-- LINKS -->
+     <link rel="stylesheet" href="./CSS/enroll.css">
+</head>
+<body>
+    <div class="heads">
+        <div class="icon">
+            <div class="icon-img"><img src="./ASSET/sti-logo.png" alt=""></div>
+        </div>
+        <div class="buttons">
+            <a href="./index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="message">
+        <h2>Welcome,</h2>
+    </div>
+
+    <div class="container">
+        <form action="./data.php" method="post">
+            <h2>Student Enrollment</h2>
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <div class="data">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <label for="fname" >First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="mname">Middle Name:</label>
+                    <input type="text" id="mname" name="mname" class="mname-input">
+                    <label for="birthday">Date of Birth:</label>
+                    <input type="date" name="birthday" required> <br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="gfemale">Female</label>
+                    <label for="religion">Religion:</label>
+                    <select name="religion" id="religion" name="religion">
+                        <option value="Roman Catholic">Roman Catholic</option>
+                        <option value="Christian">Christian</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Iglesia ni Cristo">Iglesia ni Cristo</option>
+                        <option value="Buddhist">Buddhist</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" class="address" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" name="email" id="email" required>
+                    <label for="pnumber">Phone Number:</label>
+                    <input type="number" required id="pnumber" name="pnumber">
+                    <hr>
+                </div>
+                <h2>Enrollment Details</h2>
+                <div class="data">
+                    <label for="student-type" class="radios">Enrollment Type:</label>
+                    <input type="radio" id="New Student" name="student-type" value="New Student">
+                    <label for="New Student" class="radios">New Student</label>
+                    <input type="radio" id="Returning Student" name="student-type" value="Returning Student">
+                    <label for="Returning Student" class="radios">Returning Student</label>
+                    <input type="radio" id="Transferee" name="student-type" value="Transferee">
+                    <label for="Transferee">Transferee</label> <br>
+                    <label for="course" class="radios">Course:</label>
+                    <select name="course" id="course" class="selection">
+                        <option value="Associate in Computer Technology">Associate in Computer Technology (ACT)</option>
+                        <option value="Bachelor of Arts in Communication">Bachelor of Arts in Communication (BACOMM)</option>
+                        <option value="Bachelor of Multimedia Arts">Bachelor of Multimedia Arts (BMMA)</option>
+                        <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy (BSA)</option>
+                        <option value="Bachelor of Science in Business Administration">Bachelor of Science in Business Administration (BSBA)</option>
+                        <option value="Bachelor of Science in Computer Engineering">Bachelor of Science in Computer Engineering (BSCpE)</option>
+                        <option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science (BSCS)</option>
+                        <option value="Bachelor of Science in Hospitality Management">Bachelor of Science in Hospitality Management (BSHM)</option>
+                        <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology (BSIT)</option>
+                        <option value="Bachelor of Science in Tourism Management">Bachelor of Science in Tourism Management (BSTM)</option>
+                    </select> <br>
+                    <label for="previousSchool">Previous School:</label>
+                    <input type="text" id="previousSchool" name="previousSchool" required> <br>
+                    <label for="form137">Form 137:</label>
+                    <input type="file" id="form137" accept="image/*" class="files">
+                    <label for="goodmoral">| Good Moral:</label>
+                    <input type="file" class="files" accept="image/*"><br>
+                    <label for="photo">Photo 1x1:</label>
+                    <input type="file" class="files" accept="image/*">
+                    <label for="psa">| Birth Certificate:</label>
+                    <input type="file" class="psa" accept="image/*">
+                    <div class="buttons">
+                        <button type="submit">Submit</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="container">
+        <form action="./data.php" method="post">
+            <div class="personal-info">
+                <h2>Parent/Guardian Information</h2>
+                <div class="data">
+                    <h3>Mother:</h3>
+                    <label for="plname" class="plname">Last Name:</label>
+                    <input type="text" id="plname" required>
+                    <label for="pfname" class="pfname">First Name:</label>
+                    <input type="text" id="pfname" required>
+                    <label for="pmname">Middle Name:</label>
+                    <input type="text" id="pmname" class="mname-input"> <br>
+                    <label for="ppnumber">Phone Number:</label>
+                    <input type="number" required id="ppnumber">
+                    <label for="pemail">Email:</label>
+                    <input type="email" name="pemail" id="pemail" required> <br>
+                    <label for="preligion">Religion:</label>
+                    <select name="preligion" id="preligion">
+                        <option value="Roman Catholic">Roman Catholic</option>
+                        <option value="Christian">Christian</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Iglesia ni Cristo">Iglesia ni Cristo</option>
+                        <option value="Buddhist">Buddhist</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="occupation">Occupation:</label>
+                    <select name="occupation" id="occupation">
+                        <option value="employed">Employed</option>
+                        <option value="self-employed">Self-Employed</option>
+                        <option value="un-employed">Un-Employed</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+    <source src="./JS/function.js" type="">
+</body>
+</html>

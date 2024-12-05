@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rosarivo:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #CFCFCF;
+}
+
+.heads {
+    width: 100%;
+    height: 50px;
+    background-color: #003366;
+    display: flex;
+    min-width: 400px;
+}
+
+.heads .icon {
+    width: 50%;
+    height: auto;
+}
+
+.heads .icon-img {
+    width: 50%;
+    height: auto;
+    padding-left: 5%;
+}
+
+.heads .icon-img  img{
+    height: 50px;
+}
+
+.heads .buttons {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3%;
+}
+
+.heads .buttons button {
+    margin-left: 50px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #FEF200;
+    color: black;
+    border-radius: 100px;
+    transition: 0.25s ease-in-out;
+}
+
+.heads .buttons button:hover {
+    box-shadow: 0 5px 20px black;
+    transform: translateY(-5px);
+}
+
+.heads .buttons button:active {
+    opacity: 0.5;
+}
+/* ------------------------------------- */
+.intro-pic {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-pic .pic {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./ASSET/sti-students.png);
+    background-size: cover;
+    background-position: 0 10%;
+    border-radius: 40px;    
+    min-width: 300px;
+    transition: all .55s ease-in-out;
+}
+
+.pic .intro-btn button {
+    font-family: 'Roboto';
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 100;
+    font-weight: bold;
+}
+
+.pic .intro-btn {
+    opacity: 0;
+    transition: all .55s ease-in-out;
+}
+
+.intro-pic:hover .intro-btn {
+    opacity: 1;
+}
+.intro-pic:hover .pic {
+    opacity: 0.5;
+}
+/* --------------------------------------------- */
+.intro-text {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    min-width: 320px;
+}
+
+.intro-text h1 {
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.intro-text .p1 {
+    width: 80%;
+    color: red;
+    font-family: 'Rosarivo';
+    font-style: italic;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.intro-text .p2 {
+    width: 80%;
+    color: blue;
+    font-family: 'Rosarivo';
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.intro-text .line {
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    min-width: 320px;
+}
+
+.grid-container {
+    width: 100%;
+    height: 1750px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.grid-container .grid-wrapper {
+    width: 80%;
+    margin-top: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-auto-rows: 300px;
+    column-gap: 3%;
+    row-gap: 2%;
+    padding: 20px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #003366;
+    min-width: 320px;
+    padding: 50px 0;
+    border-radius: 40px;
+}
+
+.grid-container .grid-wrapper .grid-items {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.grid-items .item1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item5 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item6 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item7 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item8 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item9 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item10 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.grid-items .item1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.grid-items .item2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BACOMM.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BMMA.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BSA.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item5 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BSBA.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item6 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BSCpE.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item7 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BSCS.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item8 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BSHM.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item9 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BSIT.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.grid-items .item10 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./ASSET/BSTM.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%;
+    height: 80px; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 12px;
+    padding: 0 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.grid-items:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    /* Adjust header layout */
+    .heads .icon, .heads .buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .heads .buttons button {
+        margin: 10px;
+        width: 80px;
+        height: 25px;
+    }
+
+    .intro-text h1 {
+        font-size: 40px;
+    }
+
+    .intro-text .p1, .intro-text .p2 {
+        font-size: 20px;
+    }
+
+    .intro-text .line {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stack header elements */
+    .heads {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .intro-pic {
+        height: 300px;
+    }
+
+    .intro-pic .pic {
+        width: 100%;
+        height: 90%;
+        border-radius: 20px;
+    }
+
+    .intro-text h1 {
+        font-size: 35px;
+    }
+
+    .intro-text .p1, .intro-text .p2 {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .grid-container .grid-wrapper {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+
+    .grid-container .grid-wrapper .grid-items {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile-friendly layout */
+    .heads .buttons button {
+        width: 70px;
+        height: 20px;
+    }
+
+    .intro-pic {
+        height: 250px;
+    }
+
+    .intro-text h1 {
+        font-size: 30px;
+    }
+
+    .intro-text .p1, .intro-text .p2 {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        padding: 10px;
+    }
+
+    .grid-container .grid-wrapper .grid-items {
+        height: 120px;
+    }
+}

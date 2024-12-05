@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rosarivo:ital@0;1&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #CFCFCF;
+    justify-content: center;
+    align-items: center;
+}
+
+.heads {
+    width: 100%;
+    height: 50px;
+    background-color: #003366;
+    display: flex;
+    min-width: 400px;
+    position: relative;
+}
+
+.heads .icon {
+    width: 50%;
+    height: auto;
+}
+
+.heads .icon-img {
+    width: 50%;
+    height: auto;
+    padding-left: 5%;
+}
+
+.heads .icon-img  img{
+    height: 50px;
+}
+
+.heads .buttons {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.heads a {
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    transition: .5s ease;
+}
+.heads a:hover {
+    background-color: red;
+    color: black;
+}
+
+.message {
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+
+.message h2 {
+    font-size: 3em;
+}
+
+.container {
+    width: 1050px;
+    min-width: 700px;
+    height: 540px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.container h2 {
+    font-size: 50px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.container .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button {
+    width: 90px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: .25s ease-in-out;
+}
+.buttons button:hover {
+    background-color: black;
+    color: white;
+}
+.buttons button:active {
+    opacity: 0.3;
+}
+
+.container .personal-info {
+    width: 100%;
+    height: 200px;
+}
+
+.personal-info h2 {
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.data label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+.mname-input{
+    margin-right: 40px;
+}
+.data input {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.gfemale {
+    margin-right: 100px;
+}
+.address {
+    width: 400px;
+} 
+.radios {
+    margin-right: 10px;
+}
+.files {
+    width: 230px;
+}
+.selection{
+    margin-bottom: 10px;
+}

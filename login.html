@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    
+    <!-- <link rel="stylesheet" href="login.css"> [Google Font] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&family=Varela+Round&display=swap" rel="stylesheet">
+
+     <!-- Compiled and minified CSS [Materialize] -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- CSS -->
+    <style>
+        html, body {
+            height: 30%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body {
+            background-color: #003366;
+        }
+        body {
+            background-image: url('asset/sti-logo\ 4\ \(3\).png'); /* Replace with your image URL */
+            background-size: 1200px;
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-position-y: top;
+            
+        }
+        .container{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            
+        }
+        h1{
+            color: white;
+            text-align:  center;
+            font-size: 45px;
+        }
+        #login{
+            display: grid;
+            background-color: white;
+            opacity: 75%;
+            border-radius: 35px;
+            width: 350px;
+            height: 100%;
+            padding: 30px;
+            
+        }
+        form{
+            align-content: center;
+            justify-self: center;
+        }
+        #email, #password{
+            height: 100%;
+            width: 100%;
+        }
+        p{
+            margin: 0;
+        }
+        .row{
+            margin-bottom: 0;
+        }
+        #btn{
+            display: flex;
+            flex-direction: column;
+            font-style: bold;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Systems Technology Institute <br>
+            ENROLLMENT PORTAL
+        </h1>
+        <div class="row">
+            <form class="col s12" id="login" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Email" id="email" type="email" class="validate" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Password" id="password" type="password" class="validate" required> <br>
+                        <a href="" id="forgotP">Forgot Password</a><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12" id="btn">
+                        <button class="btn waves-effect waves-light" type="submit" name="action" style=" background-color: #fff200; color: #272626; font-family: 'Poppins', sans-serif; width: 150px;  border-radius: 15px;">Log in 
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <p>Don’t have an account yet?</p>
+                        <a href="C:\xampp\htdocs\Enrollment System\register.html">CREATE ACCOUNT</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
