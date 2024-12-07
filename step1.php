@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ONLINE REGISTRATION
         </h1>
         <div class="row">
-            <form class="col s12" id="login" method="post" action="">
+            <form class="col s12" id="login" method="post" action="" style="height: 950px;">
                 <h2>Personal Information</h2>
                 <!-- Line 1 -->
                 <div class="row" id="line1">
@@ -158,10 +158,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <label class="active" for="telNoemail">Email Address</label>
                     </div>
                 </div>
-                <div class="input-field col s12" id="btn">
+                <div class="row" id="line5">
+                    <div class="input-field col s12" id="btn">
                         <button class="btn waves-effect waves-light" type="submit" style=" background-color: #fff200; color: #272626; font-family: 'Poppins', sans-serif; width: 150px;  border-radius: 15px;">Next 
                         </button>
                     </div>
+                </div>
             </form>
         </div>
     </div>

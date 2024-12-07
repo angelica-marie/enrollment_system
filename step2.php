@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             border-radius: 35px;
             width: 950px;
             padding: 30px;  
-            height: 1200px; 
+            height: 1230px; 
         }
 
         form{
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ONLINE REGISTRATION
         </h1>
         <div class="row">
-            <form class="col s12" id="login" method="post" action="">
+            <form class="col s6" id="login" method="post" action="">
                 <h2>Current or Last School Attended</h2>
                 <!-- Line 6 -->
                 <div class="row" id="line6">

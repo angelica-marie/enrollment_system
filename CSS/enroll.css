@@ -14,7 +14,6 @@ body {
     background-position: center;
     background-repeat: no-repeat; 
     background-position-y: top;
-    
 }
 
 .container{
@@ -35,8 +34,7 @@ h1{
     opacity: 75%;
     border-radius: 35px;
     width: 950px;
-    padding: 30px;  
-    height: 900px; 
+    padding: 30px; 
 }
 
 form{

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI COLLEGE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Poppins", sans-serif; }
+        .hidden { display: none; justify-content: center; align-items: center; }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="showForm('shsForm')">Open SHS Form</button>
+        <button onclick="showForm('collegeForm')">Open College Form</button>
+    </div>
+
+    <div id="shsForm" class="hidden">
+        <form>
+            <label for="prefCamp">Preferred STI Campus:</label>
+            <input id="prefCamp" type="text">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="collegeForm" class="hidden">
+        <form>
+            <label for="course">Course:</label>
+            <input id="course" type="text">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function showForm(formId) {
+            document.querySelectorAll('.hidden').forEach(form => form.style.display = 'none');
+            const targetForm = document.getElementById(formId);
+            if (targetForm) {
+                targetForm.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
