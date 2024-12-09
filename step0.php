@@ -102,7 +102,49 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             justify-content: center; 
             align-items: center; 
         }
+        .container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .choices {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center; 
+            grid-template-rows: 1fr 1fr;
+            text-align: center;
+        }
+
+        .item1, .item2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;            
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        .choices img {
+            max-width: 70%;
+            height: auto;
+            margin-bottom: 10px;
+            padding-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -116,17 +158,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
     <div class="container">
-        <!-- Code from Hanz -->
-        <div>
-        <div class="grid-container">
-        <div class="grid-wrapper">
-            <div class="item9"><img src="./ASSET/BSIT.jpg" alt="" style="width: 50%;"><div class="overlay"><h1>Bachelor of Science in Information Technology</h1></div></div></div>
-            <div class="grid-items">
-            <label for="studentType">Select Student Type:</label>
-            <button onclick="showForm('shsForm')">Senior Highschool</button>
-            <button onclick="showForm('collegeForm')">College</button>
-        </div>
-        </div>
+    <label for="studentType"><h2 style="font-family: 'Poppins', sans-serif; color: black;">Select Student Type:</h2></label>
+         <div class="grid-container">
+            <div class="choices">
+                <div class="item1">
+                    <a onclick="showForm('shsForm')" style="font-family: 'Poppins', sans-serif;"><img src="./ASSET/BSIT.jpg" alt=""><br>Senior Highschool</a>
+                </div>
+                <div class="item2">
+                    <a onclick="showForm('collegeForm')" style="font-family: 'Poppins', sans-serif;"><img src="./ASSET/sti-students.png" alt=""><br>College</a>
+                </div>
+            </div>
         </div>
 
         <!-- Hidden Forms -->
